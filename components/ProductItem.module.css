@@ -1,0 +1,34 @@
+.product {
+    margin-top: 1rem;
+}
+.detail {
+    padding:0 1rem;
+    min-height:5rem;
+}
+
+.detail_header {
+    background: transparent;
+    border:none;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+}
+
+.price_size {
+    font-size: 1.8rem;
+}
+.original_price {
+    composes: price_size;
+    margin-left:.5rem;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.current_price {
+    composes: price_size;
+    color: red;
+}
+.black_color {
+    color:#000;
+}
+

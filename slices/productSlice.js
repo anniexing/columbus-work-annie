@@ -1,7 +1,7 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { fetchProducts } from '../pages/api/product';
-import { setMessage } from './messageSlice';
-import wishlist from '../components/Wishlist';
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { fetchProducts } from "../pages/api/product";
+import { setMessage } from "./messageSlice";
+import { saveState } from '../utils/localStorage';
 
 export const handlerFetchProducts = createAsyncThunk(
   "products/fetchProducts",
@@ -22,30 +22,22 @@ export const handlerFetchProducts = createAsyncThunk(
   }
 );
 
-
 const initialState = {
-  products: null,
-  wishlist: []
-}
+  products: {},
+};
 
 const productSlice = createSlice({
   name: "products",
   initialState,
-  reducers:{
-    addToWishlist: (state, action) => {
-      state.wishlist = [action.payload, ...state.wishlist];
-    }
-  },
   extraReducers: {
     [handlerFetchProducts.fulfilled]: (state, action) => {
       state.products = action.payload;
     },
     [handlerFetchProducts.rejected]: (state, action) => {
       state.products = {};
-    }
+    },
   },
 });
 
-export const { addToWishlist } = productSlice.actions;
 const { reducer } = productSlice;
 export default reducer;

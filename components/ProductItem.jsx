@@ -43,7 +43,7 @@ const ProductItem = ({ productItem }) => {
         />
         <Card.Body>
           <Card.Title>{productItem.name}</Card.Title>
-          <Card.Text>{productItem.summary}</Card.Text>
+          <Card.Text className={styles.summary}>{productItem.summary}</Card.Text>
         </Card.Body>
         <Card.Body className={styles.detail}>
           <Card.Header

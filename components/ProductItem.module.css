@@ -14,6 +14,16 @@
     cursor: pointer;
 }
 
+.summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5rem;
+    max-height: 3rem;
+}
+
 .price_size {
     font-size: 1.8rem;
 }

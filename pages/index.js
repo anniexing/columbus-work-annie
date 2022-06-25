@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Product from "../components/Product";
+import Home from "../components/Home";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -39,10 +39,10 @@ const Home = () => {
       </Head>
 
       <main>
-        <Product />
+        <Home />
       </main>
     </div>
   );
 };
 
-export default Home;
+export default HomePage;

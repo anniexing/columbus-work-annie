@@ -7,6 +7,11 @@ import "../styles/globals.css";
 
 
 const MyApp = ({ Component, pageProps }) => {
+  store.subscribe(
+    debounce(async () => {
+      await saveState(store.getState());
+    }, 800)
+  );
   return (
     <Provider store={store}>
       <Component {...pageProps} />

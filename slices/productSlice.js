@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchProducts } from "../pages/api/product";
 import { setMessage } from "./messageSlice";
-import { saveState } from '../utils/localStorage';
 
 export const handlerFetchProducts = createAsyncThunk(
   "products/fetchProducts",

@@ -56,7 +56,7 @@ const ProductItem = ({ productItem }) => {
           {isShowDetails && <Card.Text>{productItem.details}</Card.Text>}
         </Card.Body>
         <Card.Body>
-          <Card.Text>
+          <Card.Text as="div">
             <b
               className={cn(
                 styles.current_price,

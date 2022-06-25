@@ -4,12 +4,14 @@ import { handlerFetchProducts } from "../slices/productSlice";
 import ProductsList from "./ProductsList";
 import Wishlist from './Wishlist';
 
+
 const Product = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(handlerFetchProducts());
   }, []);
+
   return (
     <>
       <ProductsList />

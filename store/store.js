@@ -10,12 +10,11 @@ const reducer = {
   messages: messageReducer
 };
 
+console.log(loadState());
 
 const store = configureStore({
   reducer: reducer,
   devTools: process.env.NODE_ENV !== 'production',
-  preloadedState: loadState()
-
 });
 
 export default store;

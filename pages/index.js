@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Product from "../components/Product";
 
@@ -39,7 +38,7 @@ const Home = () => {
         <link rel="icon" href="/original.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <Product />
       </main>
     </div>

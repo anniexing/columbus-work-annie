@@ -1,0 +1,24 @@
+.wishlist {
+    border:none;
+    align-items: center;
+    margin:2rem;
+
+}
+.header {
+    composes: price_size from './ProductItem.module.css';
+    background: transparent;
+    border:none;
+}
+.total_price {
+    composes: price_size from "./ProductItem.module.css";
+    margin-top: 1rem;
+}
+
+.list {
+    border: none;
+}
+
+.list_item {
+    border:none;
+    text-align:center;
+}

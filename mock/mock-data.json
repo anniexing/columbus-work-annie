@@ -1,0 +1,62 @@
+{
+  "products": {
+    "title": "Super Product List",
+    "lists": [
+      {
+        "id": 1,
+        "name": "Super Product 1",
+        "summary": "Some text for this super product that all want to buy",
+        "details":"This is more details about Super Product 1",
+        "picture": "/assets/products/super_product_1.jpg",
+        "original_price": 120,
+        "current_price": 569
+
+      },
+      {
+        "id": 34,
+        "name": "Super Product 34",
+        "summary": "Some text for this super product that all want to buy",
+        "details":"This is more details about Super Product 34",
+        "picture": "/assets/products/super_product_34.jpg",
+        "original_price": 120,
+        "current_price": 459
+      },
+      {
+        "id": 39,
+        "name": "Super Product 39",
+        "summary": "Some text for this super product that all want to buy",
+        "details":"This is more details about Super Product 39",
+        "picture": "/assets/products/super_product_39.jpg",
+        "original_price": 120,
+        "current_price": 1569
+      },
+      {
+        "id": 56,
+        "name": "Super Product 56",
+        "summary": "Some text for this super product that all want to buy",
+        "details":"This is more details about Super Product 56",
+        "picture": "/assets/products/super_product_56.jpg",
+        "original_price": 69,
+        "current_price": 69
+      },
+      {
+        "id": 77,
+        "name": "Super Product 77",
+        "summary": "Some text for this super product that all want to buy",
+        "details":"This is more details about Super Product 77",
+        "picture": "/assets/products/super_product_77.jpg",
+        "original_price": 679,
+        "current_price": 679
+      },
+      {
+        "id": 99,
+        "name": "Super Product 99",
+        "summary": "Some text for this super product that all want to buy",
+        "details":"This is more details about Super Product 99",
+        "picture": "/assets/products/super_product_99.jpg",
+        "original_price": 2269,
+        "current_price": 2269
+      }
+    ]
+  }
+}

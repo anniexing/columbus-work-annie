@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Home from "../components/Home";
+import styles from '../styles/Home.module.css';
 
 const HomePage = () => {
   return (
@@ -38,7 +38,7 @@ const HomePage = () => {
         <link rel="icon" href="/original.ico" />
       </Head>
 
-      <main>
+      <main className={styles.main}>
         <Home />
       </main>
     </div>
